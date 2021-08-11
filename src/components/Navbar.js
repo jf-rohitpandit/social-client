@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, BrowserRouter as Router } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -11,13 +11,29 @@ const Navbar = () => {
         <div className="m-auto">
           <ul className="navbar-nav ">
             <li className="nav-item mx-5">
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                exact
+                to="/"
+                activeClassName="text-decoration-underline fw-bold"
+              >
+                Home
+              </NavLink>
             </li>
             <li className="nav-item mx-5">
-              <NavLink to="/profile">Profile</NavLink>
+              <NavLink
+                to="/profile"
+                activeClassName="text-decoration-underline fw-bold"
+              >
+                Profile
+              </NavLink>
             </li>
             <li className="nav-item mx-5">
-              <NavLink to="/people">People</NavLink>
+              <NavLink
+                to="/people"
+                activeClassName="text-decoration-underline fw-bold"
+              >
+                People
+              </NavLink>
             </li>
           </ul>
         </div>

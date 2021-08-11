@@ -1,20 +1,7 @@
-import React from 'react';
-import PostComponent from '../components/PostComponent';
+import Posts from '../components/Posts'
 
 const Home = () => {
-    return (
-        <div>
-            <PostComponent />
-            <PostComponent />
-            <PostComponent />
-            <PostComponent />
-            <PostComponent />
-            <PostComponent />
-            <PostComponent />
-            <PostComponent />
-            <PostComponent />
-        </div>
-    );
-};
+  return <Posts />
+}
 
-export default Home;
+export default Home
