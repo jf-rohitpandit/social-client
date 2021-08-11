@@ -9,3 +9,8 @@ a {
 .pointer {
   cursor: pointer;
 }
+
+.commentsHeight {
+  max-height: '100vh';
+  overflow-y: 'scroll';
+}
